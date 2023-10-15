@@ -61,6 +61,7 @@ ul li a {
 
 .section {
     width: 80%;
+    margin-left: 20%;
 }
 
 .navbar {
@@ -71,15 +72,35 @@ ul li a {
     display: flex;
 }
 
+.navbar2 {
+    width: 75vw;
+    margin-left: 18rem;
+    background-color: white;
+    justify-content: end;
+    display: flex;
+}
+
 .nav img {
     width: 70px;
 }
 
-.section {
-    margin-left: 20%;
-}
+
+#profile-navbar,
+.icon-cloche {
+    border-radius: 100%;
+    height: 70px;
+    width: 70px;
+    padding: 10px;
+} 
+
+
 .section-element {
     display: flex;
+}
+
+.section-element2 {
+    width: 80vw;
+    margin-left: 20%;
 }
 
 .card-positive {

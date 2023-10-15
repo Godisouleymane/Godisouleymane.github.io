@@ -97,6 +97,7 @@ button:hover {
 }
 tbody tr:hover {
   background-color: #cccccc84;
+  color: #4A96A6;
 } 
 
 thead {
@@ -121,6 +122,10 @@ thead {
     width: 20%;
 }
 
+.statusColor {
+    color: #4A96A6;
+}
+
 
 /* Pour Commande */
 .labo1 {
@@ -133,6 +138,12 @@ thead {
     width: 20em;
 }
 
+#profile-navbar,
+.icon-cloche {
+    border-radius: 100%;
+    height: 60px;
+    width: 60px;
+} 
 
 
 @media screen and (max-width:375px) {

@@ -5,19 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.min.css">
-    <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/fontawesome.min.css">
-    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <link rel="stylesheet" href="suividetail.css">
     <link rel="stylesheet" href="dashboard.css">
-    <title>Suivi</title>
+    <title>Suivi detail</title>
 </head>
+
 <body>
     <div class="container">
-        <input type="checkbox"  id="check">
-        <label class="label2" for="check">
-            <i class="fas fa-bars" id="btn"></i>
-        </label>
         <div class="sidebar">
             <div class="sidebar_element">
                 <div class="logo">
@@ -74,24 +70,21 @@
             </div>
         </div>
         <div class="section">
-            <nav class="navbar">
+            <nav class="navbar2">
                 <div class="nav">
-                    <input type="checkbox"  id="check">
-                    <label class="label2" for="check">
-                        <i class="fas fa-bars" id="btn"></i>
-                    </label>
                     <img class="icon-cloche" src="icons8-cloche-50.png" alt="Icon-cloche">
                     <img src="images/avatar.jpg" alt="avatar">
                 </div>
             </nav>
-            <h2 class="page-title">Rapport : R-TE202303001</h2>
+            <div class="section-element2">
+                <h2 class="page-title">Rapport : <span id="span-title">R-TE202303001</span></h2>
             <div class="card-table">
                 <img class="mylogo" src="images/logo.png" alt="logo">
                 <div class="logo-title">
                     <h3 class="logo-title1">Laboratoire</h3>
                     <h3 class="logo-title2">lubrifiant</h3>
                 </div>
-                <h3 class="logo-subtitle">Rapport d’analyse (Moteur)</h3>
+                <h3 class="logo-subtitle">Rapport d’analyse <span id="span-title">(Moteur)</span></h3>
                 <div class="first-table">
                     <table class="table-name">
                         <thead>
@@ -194,266 +187,293 @@
                             </tr>
                         </tbody>
                     </table>
-                    </div>
-
-                    <div class="third-table">
-                        <table class="table-name">
-                            <thead>
-                                <tr class="ligne-color">
-                                    <th>Paramètres</th>
-                                    <th style="border: none;">Méthodes</th>
-                                    <th>Unités</th>
-                                    <th>Limites</th>
-                                    <th colspan="8">Resultat</th>
-                                </tr>
-                                <tr>
-                                    <th class="ligne-color2" colspan="8">-</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th class="ligne-width">Aluminium</th>
-                                    <td class="ligne-width">ASTM D5185</td>
-                                    <th class="ligne-width">ppm</th>
-                                    <td id="border-bottom" class="bordure"><8/16<</td>
-                                    <td id="border-bottom" class="bordure">1.6</td>
-                                    <td id="border-bottom" class="bordure">1</td>
-                                    <td id="border-bottom" class="bordure">0</td>
-                                    <td id="border-bottom" class="bordure">1.32</td>
-                                </tr>
-                                <tr>
-                                    <th class="ligne-width">Chrome</th>
-                                    <td class="ligne-width">ASTM D5185</td>
-                                    <th class="ligne-width">ppm</th>
-                                    <td id="border-bottom" class="bordure"><5/25<</td>
-                                    <td id="border-bottom" class="bordure">0.2</td>
-                                    <td id="border-bottom" class="bordure">0</td>
-                                    <td id="border-bottom" class="bordure">0</td>
-                                    <td id="border-bottom" class="bordure">0.22</td>
-                                </tr>
-                                <tr class="ligne-active">
-                                    <th class="ligne-width">Cuivre</th>
-                                    <td class="ligne-width">ASTM D5185</td>
-                                    <th class="ligne-width">ppm</th>
-                                    <td id="border-bottom" class="bordure"><15/45<</td>
-                                    <td id="border-bottom-bg-color" class="bordure">0.2</td>
-                                    <td id="border-bottom-bg-color" class="bordure">0</td>
-                                    <td id="border-bottom-bg-color" class="bordure">0</td>
-                                    <td id="border-bottom-bg-color" class="bordure">0.22</td>
-                                </tr>
-                                <tr>
-                                    <th class="ligne-width">Etain</th>
-                                    <td class="ligne-width">ASTM D5185</td>
-                                    <th class="ligne-width">ppm</th>
-                                    <td id="border-bottom" class="bordure"><15/30<</td>
-                                    <td id="border-bottom" class="bordure">0</td>
-                                    <td id="border-bottom" class="bordure">0</td>
-                                    <td id="border-bottom" class="bordure">0</td>
-                                    <td id="border-bottom" class="bordure">0.28</td>
-                                </tr>
-                                <tr>
-                                    <th class="ligne-width">Fer</th>
-                                    <td class="ligne-width">ASTM D5185</td>
-                                    <th class="ligne-width">ppm</th>
-                                    <td id="border-bottom" class="bordure"><8/16<</td>
-                                    <td id="border-bottom" class="bordure">1.6</td>
-                                    <td id="border-bottom" class="bordure">1</td>
-                                    <td id="border-bottom" class="bordure">0</td>
-                                    <td id="border-bottom" class="bordure">1.32</td>
-                                </tr>
-                                <tr>
-                                    <th class="ligne-width">Nickel</th>
-                                    <td class="ligne-width">ASTM D5185</td>
-                                    <th class="ligne-width">ppm</th>
-                                    <td id="border-bottom" class="bordure"><8/16<</td>
-                                    <td id="border-bottom" class="bordure">1.6</td>
-                                    <td id="border-bottom" class="bordure">1</td>
-                                    <td id="border-bottom" class="bordure">0</td>
-                                    <td id="border-bottom" class="bordure">1.32</td>
-                                </tr>
-                                <tr>
-                                    <th class="ligne-width">Chrome</th>
-                                    <td class="ligne-width">ASTM D5185</td>
-                                    <th class="ligne-width">ppm</th>
-                                    <td id="border-bottom" class="bordure"><8/16<</td>
-                                    <td id="border-bottom" class="bordure">1.6</td>
-                                    <td id="border-bottom" class="bordure">1</td>
-                                    <td id="border-bottom" class="bordure">0</td>
-                                    <td id="border-bottom" class="bordure">1.32</td>
-                                </tr>
-                                <tr>
-                                    <th class="ligne-width">Silicium</th>
-                                    <td class="ligne-width">ASTM D5185</td>
-                                    <th class="ligne-width">ppm</th>
-                                    <td id="border-bottom" class="bordure"><8/16<</td>
-                                    <td id="border-bottom" class="bordure">1.6</td>
-                                    <td id="border-bottom" class="bordure">1</td>
-                                    <td id="border-bottom" class="bordure">0</td>
-                                    <td id="border-bottom" class="bordure">1.32</td>
-                                </tr>
-                                <tr>
-                                    <th class="ligne-width">Titan</th>
-                                    <td class="ligne-width">ASTM D5185</td>
-                                    <th class="ligne-width">ppm</th>
-                                    <td id="border-bottom" class="bordure"><8/16<</td>
-                                    <td id="border-bottom" class="bordure">1.6</td>
-                                    <td id="border-bottom" class="bordure">1</td>
-                                    <td id="border-bottom" class="bordure">0</td>
-                                    <td id="border-bottom" class="bordure">1.32</td>
-                                </tr>
-                                <tr>
-                                    <th class="ligne-width">Vadanium</th>
-                                    <td class="ligne-width">ASTM D5185</td>
-                                    <th class="ligne-width">ppm</th>
-                                    <td id="border-bottom" class="bordure"><8/16<</td>
-                                    <td id="border-bottom" class="bordure">1.6</td>
-                                    <td id="border-bottom" class="bordure">1</td>
-                                    <td id="border-bottom" class="bordure">0</td>
-                                    <td id="border-bottom" class="bordure">1.32</td>
-                                </tr>
-                                <tr>
-                                    <th class="ligne-width">Argent</th>
-                                    <td class="ligne-width">ASTM D5185</td>
-                                    <th class="ligne-width">ppm</th>
-                                    <td id="border-bottom" class="bordure"><8/16<</td>
-                                    <td id="border-bottom" class="bordure">1.6</td>
-                                    <td id="border-bottom" class="bordure">1</td>
-                                    <td id="border-bottom" class="bordure">0</td>
-                                    <td id="border-bottom" class="bordure">1.32</td>
-                                </tr>
-                                <tr>
-                                    <th class="ligne-width">Cadmium</th>
-                                    <td class="ligne-width">ASTM D5185</td>
-                                    <th class="ligne-width">ppm</th>
-                                    <td id="border-bottom" class="bordure"><8/16<</td>
-                                    <td id="border-bottom" class="bordure">1.6</td>
-                                    <td id="border-bottom" class="bordure">1</td>
-                                    <td id="border-bottom" class="bordure">0</td>
-                                    <td id="border-bottom" class="bordure">1.32</td>
-                                </tr>
-                                <tr>
-                                    <th class="ligne-width">Sodium</th>
-                                    <td class="ligne-width">ASTM D5185</td>
-                                    <th class="ligne-width">ppm</th>
-                                    <td id="border-bottom" class="bordure"><8/16<</td>
-                                    <td id="border-bottom-bg-color2" class="bordure"></td>
-                                    <td id="border-bottom-bg-color2" class="bordure"></td>
-                                    <td id="border-bottom-bg-color2" class="bordure"></td>
-                                    <td id="border-bottom-bg-color2" class="bordure"></td>
-                                </tr>
-                                <tr>
-                                    <th class="ligne-width">Calcium</th>
-                                    <td class="ligne-width">ASTM D5185</td>
-                                    <th class="ligne-width">ppm</th>
-                                    <td id="border-bottom" class="bordure"><8/16<</td>
-                                    <td id="border-bottom" class="bordure">1.6</td>
-                                    <td id="border-bottom" class="bordure">1</td>
-                                    <td id="border-bottom" class="bordure">0</td>
-                                    <td id="border-bottom" class="bordure">1.32</td>
-                                </tr>
-                                <tr>
-                                    <th class="ligne-width">Magnesium</th>
-                                    <td class="ligne-width">ASTM D5185</td>
-                                    <th class="ligne-width">ppm</th>
-                                    <td id="border-bottom" class="bordure"><8/16<</td>
-                                    <td id="border-bottom" class="bordure">1.6</td>
-                                    <td id="border-bottom" class="bordure">1</td>
-                                    <td id="border-bottom" class="bordure">0</td>
-                                    <td id="border-bottom" class="bordure">1.32</td>
-                                </tr>
-                                <tr>
-                                    <th class="ligne-width">Phosphore</th>
-                                    <td class="ligne-width">ASTM D5185</td>
-                                    <th class="ligne-width">ppm</th>
-                                    <td id="border-bottom" class="bordure"><8/16<</td>
-                                    <td id="border-bottom" class="bordure">1.6</td>
-                                    <td id="border-bottom" class="bordure">1</td>
-                                    <td id="border-bottom" class="bordure">0</td>
-                                    <td id="border-bottom" class="bordure">1.32</td>
-                                </tr>
-                                <tr>
-                                    <th class="ligne-width">Zinc</th>
-                                    <td class="ligne-width">ASTM D5185</td>
-                                    <th class="ligne-width">ppm</th>
-                                    <td id="border-bottom" class="bordure"><8/16<</td>
-                                    <td id="border-bottom" class="bordure">1.6</td>
-                                    <td id="border-bottom" class="bordure">1</td>
-                                    <td id="border-bottom" class="bordure">0</td>
-                                    <td id="border-bottom" class="bordure">1.32</td>
-                                </tr>
-                                <tr>
-                                    <th class="ligne-color2" colspan="8">-</th>
-                                </tr>
-                                <tr>
-                                    <th class="ligne-width">Viscosité a 100°</th>
-                                    <td class="ligne-width">ASTM D5185</td>
-                                    <th class="ligne-width">mm2/s</th>
-                                    <td id="border-bottom" class="bordure"><8/16<</td>
-                                    <td id="border-bottom-bg-color2" class="bordure">1.6</td>
-                                    <td id="border-bottom-bg-color2" class="bordure">1</td>
-                                    <td id="border-bottom-bg-color2" class="bordure">0</td>
-                                    <td id="border-bottom-bg-color" class="bordure">1.32</td>
-                                </tr>
-                                <tr>
-                                    <th class="ligne-width">TBN</th>
-                                    <td class="ligne-width">ASTM D5185</td>
-                                    <th class="ligne-width">mgKOH/g</th>
-                                    <td id="border-bottom" class="bordure"><8/16<</td>
-                                    <td id="border-bottom" class="bordure">1.6</td>
-                                    <td id="border-bottom" class="bordure">1</td>
-                                    <td id="border-bottom" class="bordure">0</td>
-                                    <td id="border-bottom" class="bordure">1.32</td>
-                                </tr>
-                                <tr>
-                                    <th class="ligne-width">Point éclair</th>
-                                    <td class="ligne-width">ASTM D5185</td>
-                                    <th class="ligne-width">°C</th>
-                                    <td id="border-bottom" class="bordure"><8/16<</td>
-                                    <td class="bordure">1.6</td>
-                                    <td id="border-bottom-bg-color2" class="bordure">1</td>
-                                    <td class="bordure">0</td>
-                                    <td class="bordure">1.32</td>
-                                </tr>
-                                <tr>
-                                    <th class="ligne-width">Sule</th>
-                                    <td class="ligne-width">ASTM D5185</td>
-                                    <th class="ligne-width">ufm</th>
-                                    <td id="border-bottom" class="bordure"><8/16<</td>
-                                    <td id="border-bottom" class="bordure">1.6</td>
-                                    <td id="border-bottom" class="bordure">1</td>
-                                    <td id="border-bottom" class="bordure">0</td>
-                                    <td id="border-bottom" class="bordure">1.32</td>
-                                </tr>
-                                <tr>
-                                    <th class="ligne-width">Eau</th>
-                                    <td class="ligne-width">ASTM D5185</td>
-                                    <th class="ligne-width">%</th>
-                                    <td id="border-bottom" class="bordure"><8/16<</td>
-                                    <td id="border-bottom" class="bordure">1.6</td>
-                                    <td id="border-bottom" class="bordure">1</td>
-                                    <td id="border-bottom" class="bordure">0</td>
-                                    <td id="border-bottom" class="bordure">1.32</td>
-                                </tr>
-                                <tr>
-                                    <th class="ligne-width">Dilution</th>
-                                    <td class="ligne-width">ASTM D5185</td>
-                                    <th class="ligne-width">-</th>
-                                    <td id="border-bottom" class="bordure"><8/16<</td>
-                                    <td id="border-bottom" class="bordure">1.6</td>
-                                    <td id="border-bottom" class="bordure">1</td>
-                                    <td id="border-bottom" class="bordure">0</td>
-                                    <td id="border-bottom" class="bordure">1.32</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="graph">
-                        <img src="images/couleur.png" alt="images-graph">
-                    </div>
                 </div>
 
+                <div class="third-table">
+                    <table class="table-name">
+                        <thead>
+                            <tr class="ligne-color">
+                                <th>Paramètres</th>
+                                <th style="border: none;">Méthodes</th>
+                                <th>Unités</th>
+                                <th>Limites</th>
+                                <th colspan="8">Resultat</th>
+                            </tr>
+                            <tr>
+                                <th class="ligne-color2" colspan="8">-</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th class="ligne-width">Aluminium</th>
+                                <td class="ligne-width">ASTM D5185</td>
+                                <th class="ligne-width">ppm</th>
+                                <td id="border-bottom" class="bordure">
+                                    <8 /16<</td>
+                                <td id="border-bottom" class="bordure">1.6</td>
+                                <td id="border-bottom" class="bordure">1</td>
+                                <td id="border-bottom" class="bordure">0</td>
+                                <td id="border-bottom" class="bordure">1.32</td>
+                            </tr>
+                            <tr>
+                                <th class="ligne-width">Chrome</th>
+                                <td class="ligne-width">ASTM D5185</td>
+                                <th class="ligne-width">ppm</th>
+                                <td id="border-bottom" class="bordure">
+                                    <5 /25<</td>
+                                <td id="border-bottom" class="bordure">0.2</td>
+                                <td id="border-bottom" class="bordure">0</td>
+                                <td id="border-bottom" class="bordure">0</td>
+                                <td id="border-bottom" class="bordure">0.22</td>
+                            </tr>
+                            <tr class="ligne-active">
+                                <th class="ligne-width">Cuivre</th>
+                                <td class="ligne-width">ASTM D5185</td>
+                                <th class="ligne-width">ppm</th>
+                                <td id="border-bottom" class="bordure">
+                                    <15 /45<</td>
+                                <td id="border-bottom-bg-color" class="bordure">0.2</td>
+                                <td id="border-bottom-bg-color" class="bordure">0</td>
+                                <td id="border-bottom-bg-color" class="bordure">0</td>
+                                <td id="border-bottom-bg-color" class="bordure">0.22</td>
+                            </tr>
+                            <tr>
+                                <th class="ligne-width">Etain</th>
+                                <td class="ligne-width">ASTM D5185</td>
+                                <th class="ligne-width">ppm</th>
+                                <td id="border-bottom" class="bordure">
+                                    <15 /30<</td>
+                                <td id="border-bottom" class="bordure">0</td>
+                                <td id="border-bottom" class="bordure">0</td>
+                                <td id="border-bottom" class="bordure">0</td>
+                                <td id="border-bottom" class="bordure">0.28</td>
+                            </tr>
+                            <tr>
+                                <th class="ligne-width">Fer</th>
+                                <td class="ligne-width">ASTM D5185</td>
+                                <th class="ligne-width">ppm</th>
+                                <td id="border-bottom" class="bordure">
+                                    <8 /16<</td>
+                                <td id="border-bottom" class="bordure">1.6</td>
+                                <td id="border-bottom" class="bordure">1</td>
+                                <td id="border-bottom" class="bordure">0</td>
+                                <td id="border-bottom" class="bordure">1.32</td>
+                            </tr>
+                            <tr>
+                                <th class="ligne-width">Nickel</th>
+                                <td class="ligne-width">ASTM D5185</td>
+                                <th class="ligne-width">ppm</th>
+                                <td id="border-bottom" class="bordure">
+                                    <8 /16<</td>
+                                <td id="border-bottom" class="bordure">1.6</td>
+                                <td id="border-bottom" class="bordure">1</td>
+                                <td id="border-bottom" class="bordure">0</td>
+                                <td id="border-bottom" class="bordure">1.32</td>
+                            </tr>
+                            <tr>
+                                <th class="ligne-width">Chrome</th>
+                                <td class="ligne-width">ASTM D5185</td>
+                                <th class="ligne-width">ppm</th>
+                                <td id="border-bottom" class="bordure">
+                                    <8 /16<</td>
+                                <td id="border-bottom" class="bordure">1.6</td>
+                                <td id="border-bottom" class="bordure">1</td>
+                                <td id="border-bottom" class="bordure">0</td>
+                                <td id="border-bottom" class="bordure">1.32</td>
+                            </tr>
+                            <tr>
+                                <th class="ligne-width">Silicium</th>
+                                <td class="ligne-width">ASTM D5185</td>
+                                <th class="ligne-width">ppm</th>
+                                <td id="border-bottom" class="bordure">
+                                    <8 /16<</td>
+                                <td id="border-bottom" class="bordure">1.6</td>
+                                <td id="border-bottom" class="bordure">1</td>
+                                <td id="border-bottom" class="bordure">0</td>
+                                <td id="border-bottom" class="bordure">1.32</td>
+                            </tr>
+                            <tr>
+                                <th class="ligne-width">Titan</th>
+                                <td class="ligne-width">ASTM D5185</td>
+                                <th class="ligne-width">ppm</th>
+                                <td id="border-bottom" class="bordure">
+                                    <8 /16<</td>
+                                <td id="border-bottom" class="bordure">1.6</td>
+                                <td id="border-bottom" class="bordure">1</td>
+                                <td id="border-bottom" class="bordure">0</td>
+                                <td id="border-bottom" class="bordure">1.32</td>
+                            </tr>
+                            <tr>
+                                <th class="ligne-width">Vadanium</th>
+                                <td class="ligne-width">ASTM D5185</td>
+                                <th class="ligne-width">ppm</th>
+                                <td id="border-bottom" class="bordure">
+                                    <8 /16<</td>
+                                <td id="border-bottom" class="bordure">1.6</td>
+                                <td id="border-bottom" class="bordure">1</td>
+                                <td id="border-bottom" class="bordure">0</td>
+                                <td id="border-bottom" class="bordure">1.32</td>
+                            </tr>
+                            <tr>
+                                <th class="ligne-width">Argent</th>
+                                <td class="ligne-width">ASTM D5185</td>
+                                <th class="ligne-width">ppm</th>
+                                <td id="border-bottom" class="bordure">
+                                    <8 /16<</td>
+                                <td id="border-bottom" class="bordure">1.6</td>
+                                <td id="border-bottom" class="bordure">1</td>
+                                <td id="border-bottom" class="bordure">0</td>
+                                <td id="border-bottom" class="bordure">1.32</td>
+                            </tr>
+                            <tr>
+                                <th class="ligne-width">Cadmium</th>
+                                <td class="ligne-width">ASTM D5185</td>
+                                <th class="ligne-width">ppm</th>
+                                <td id="border-bottom" class="bordure">
+                                    <8 /16<</td>
+                                <td id="border-bottom" class="bordure">1.6</td>
+                                <td id="border-bottom" class="bordure">1</td>
+                                <td id="border-bottom" class="bordure">0</td>
+                                <td id="border-bottom" class="bordure">1.32</td>
+                            </tr>
+                            <tr>
+                                <th class="ligne-width">Sodium</th>
+                                <td class="ligne-width">ASTM D5185</td>
+                                <th class="ligne-width">ppm</th>
+                                <td id="border-bottom" class="bordure">
+                                    <8 /16<</td>
+                                <td id="border-bottom-bg-color2" class="bordure"></td>
+                                <td id="border-bottom-bg-color2" class="bordure"></td>
+                                <td id="border-bottom-bg-color2" class="bordure"></td>
+                                <td id="border-bottom-bg-color2" class="bordure"></td>
+                            </tr>
+                            <tr>
+                                <th class="ligne-width">Calcium</th>
+                                <td class="ligne-width">ASTM D5185</td>
+                                <th class="ligne-width">ppm</th>
+                                <td id="border-bottom" class="bordure">
+                                    <8 /16<</td>
+                                <td id="border-bottom" class="bordure">1.6</td>
+                                <td id="border-bottom" class="bordure">1</td>
+                                <td id="border-bottom" class="bordure">0</td>
+                                <td id="border-bottom" class="bordure">1.32</td>
+                            </tr>
+                            <tr>
+                                <th class="ligne-width">Magnesium</th>
+                                <td class="ligne-width">ASTM D5185</td>
+                                <th class="ligne-width">ppm</th>
+                                <td id="border-bottom" class="bordure">
+                                    <8 /16<</td>
+                                <td id="border-bottom" class="bordure">1.6</td>
+                                <td id="border-bottom" class="bordure">1</td>
+                                <td id="border-bottom" class="bordure">0</td>
+                                <td id="border-bottom" class="bordure">1.32</td>
+                            </tr>
+                            <tr>
+                                <th class="ligne-width">Phosphore</th>
+                                <td class="ligne-width">ASTM D5185</td>
+                                <th class="ligne-width">ppm</th>
+                                <td id="border-bottom" class="bordure">
+                                    <8 /16<</td>
+                                <td id="border-bottom" class="bordure">1.6</td>
+                                <td id="border-bottom" class="bordure">1</td>
+                                <td id="border-bottom" class="bordure">0</td>
+                                <td id="border-bottom" class="bordure">1.32</td>
+                            </tr>
+                            <tr>
+                                <th class="ligne-width">Zinc</th>
+                                <td class="ligne-width">ASTM D5185</td>
+                                <th class="ligne-width">ppm</th>
+                                <td id="border-bottom" class="bordure">
+                                    <8 /16<</td>
+                                <td id="border-bottom" class="bordure">1.6</td>
+                                <td id="border-bottom" class="bordure">1</td>
+                                <td id="border-bottom" class="bordure">0</td>
+                                <td id="border-bottom" class="bordure">1.32</td>
+                            </tr>
+                            <tr>
+                                <th class="ligne-color2" colspan="8">-</th>
+                            </tr>
+                            <tr>
+                                <th class="ligne-width">Viscosité a 100°</th>
+                                <td class="ligne-width">ASTM D5185</td>
+                                <th class="ligne-width">mm2/s</th>
+                                <td id="border-bottom" class="bordure">
+                                    <8 /16<</td>
+                                <td id="border-bottom-bg-color2" class="bordure">1.6</td>
+                                <td id="border-bottom-bg-color2" class="bordure">1</td>
+                                <td id="border-bottom-bg-color2" class="bordure">0</td>
+                                <td id="border-bottom-bg-color" class="bordure">1.32</td>
+                            </tr>
+                            <tr>
+                                <th class="ligne-width">TBN</th>
+                                <td class="ligne-width">ASTM D5185</td>
+                                <th class="ligne-width">mgKOH/g</th>
+                                <td id="border-bottom" class="bordure">
+                                    <8 /16<</td>
+                                <td id="border-bottom" class="bordure">1.6</td>
+                                <td id="border-bottom" class="bordure">1</td>
+                                <td id="border-bottom" class="bordure">0</td>
+                                <td id="border-bottom" class="bordure">1.32</td>
+                            </tr>
+                            <tr>
+                                <th class="ligne-width">Point éclair</th>
+                                <td class="ligne-width">ASTM D5185</td>
+                                <th class="ligne-width">°C</th>
+                                <td id="border-bottom" class="bordure">
+                                    <8 /16<</td>
+                                <td class="bordure">1.6</td>
+                                <td id="border-bottom-bg-color2" class="bordure">1</td>
+                                <td class="bordure">0</td>
+                                <td class="bordure">1.32</td>
+                            </tr>
+                            <tr>
+                                <th class="ligne-width">Sule</th>
+                                <td class="ligne-width">ASTM D5185</td>
+                                <th class="ligne-width">ufm</th>
+                                <td id="border-bottom" class="bordure">
+                                    <8 /16<</td>
+                                <td id="border-bottom" class="bordure">1.6</td>
+                                <td id="border-bottom" class="bordure">1</td>
+                                <td id="border-bottom" class="bordure">0</td>
+                                <td id="border-bottom" class="bordure">1.32</td>
+                            </tr>
+                            <tr>
+                                <th class="ligne-width">Eau</th>
+                                <td class="ligne-width">ASTM D5185</td>
+                                <th class="ligne-width">%</th>
+                                <td id="border-bottom" class="bordure">
+                                    <8 /16<</td>
+                                <td id="border-bottom" class="bordure">1.6</td>
+                                <td id="border-bottom" class="bordure">1</td>
+                                <td id="border-bottom" class="bordure">0</td>
+                                <td id="border-bottom" class="bordure">1.32</td>
+                            </tr>
+                            <tr>
+                                <th class="ligne-width">Dilution</th>
+                                <td class="ligne-width">ASTM D5185</td>
+                                <th class="ligne-width">-</th>
+                                <td id="border-bottom" class="bordure">
+                                    <8 /16<</td>
+                                <td id="border-bottom" class="bordure">1.6</td>
+                                <td id="border-bottom" class="bordure">1</td>
+                                <td id="border-bottom" class="bordure">0</td>
+                                <td id="border-bottom" class="bordure">1.32</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="graph">
+                    <img src="images/couleur.png" alt="images-graph">
+                </div>
             </div>
+            </div>
+
         </div>
+    </div>
+    <script src="javascript/suiviDetail.js"></script>
+    <script src="javascript/myArray.js"></script>
+    <script src="javascript/suiviDesEchantillons.js"></script>
 </body>
 
 </html>

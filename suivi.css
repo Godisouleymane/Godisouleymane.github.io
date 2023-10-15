@@ -20,7 +20,7 @@
 
 table thead tr th {
     border-bottom: 2px solid #8f8a8a;
-    text-align: center;
+    text-align: start;
     font-size: 30px;
     color: #8f8a8a;
     height: 50px;
@@ -71,7 +71,41 @@ tbody tr:hover {
     background-color: #cccccc84;
 }
 
+.search-input{
+    padding-bottom: 10px;
+   margin-top: -5rem;
+  display: flex;
+  justify-content:end;
+}
 
+
+ input {
+    width: 23rem;
+    height: 3rem;
+    padding-left: 13px;
+    border: none;
+    background-color: #cccccc84;
+    background-image: url('icons8-sistrix.svg');
+    border-radius: 5px;
+    background-size: 2rem;
+    background-position: 1rem;
+    background-repeat: no-repeat;
+    outline: none;
+    padding-left: 55px;
+}
+
+input:focus{
+    border: 3px solid #79B51C;
+    background-image: url('icons8-sistrix (1).svg');
+  }
+
+  #profile-navbar,
+  .icon-cloche {
+      border-radius: 100%;
+      height: 60px;
+      width: 60px;
+  } 
+  
 
 
 @media screen and (width:1440px) {
