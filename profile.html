@@ -96,7 +96,7 @@
                      Retour au tableau de bord
                   </span>
                   <div class="parametreButtons">
-                    <button id="edit-password">Modifier le mot de passe</button>
+                    <button id="edit-password" onclick="editPasswordFunction()">Modifier le mot de passe</button>
                     <button id="delete-profile">Supprimer le compte</button>
                   </div>
 
@@ -105,11 +105,12 @@
                     <div class="info-user">
                         <h1>Modifier profile</h1>
                         <h2>Nom</h2>
-                        <input type="text" name="" id="" placeholder="Nom">
+                        <input type="text" id="input-name-user" placeholder="Nom">
                         <h2>Email</h2>
-                        <input type="text" name="" id="" placeholder="Email"> <br>
-                        <textarea name="" id="" cols="140" rows="30"></textarea> <br>
-                        <button id="send-button">Envoyer</button>
+                        <input type="text" id="input-email-user" placeholder="Email"> <br>
+                        <h2>Biographie</h2>
+                        <textarea name="" id="biographie" cols="140" rows="30"></textarea> <br>
+                        <button id="send-button" onclick="sendUserInfo()">Envoyer</button>
                     </div>
                     <div class="user-profile">
                         <h1>Ton Avatar</h1>
@@ -125,10 +126,11 @@
                 </div>
             </div>
         </div>
+        
         <div class="card-password hidden">
             <div class="header-card">
                 <h1>Modifier le mot de passe</h1>
-                <i id="close-icon" class="fa-solid fa-xmark"></i>
+                <i onclick="closeIconFunction()" id="close-icon" class="fa-solid fa-xmark"></i>
             </div>
             <div class="body-card">
                 <span class="card-span">Ancien mot de passe</span> <br>
@@ -137,7 +139,7 @@
                 <input type="text" id="new-password"> <br>
                 <span class="card-span">Confirmation</span> <br>
                 <input type="text" id="confirm-password"> <br>
-                <button class="send-button-password">Envoyer</button>
+                <button onclick="sendButtonPasswordFunction()" class="send-button-password">Envoyer</button>
             </div>
         </div>
     </div>

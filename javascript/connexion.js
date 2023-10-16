@@ -1,5 +1,5 @@
 
-const tentatives = 3;
+let tentatives = 3;
 const emailInput = document.getElementById('input-mail');
 const passwordInput = document.getElementById('input-password');
 const cardNotification = document.querySelector('.card-notification');
@@ -99,16 +99,17 @@ function connectionButton() {
 }
 
 
-  
-editPassword.addEventListener('click', ()=> {
-    cardPassword.classList.remove('hidden')
-})
+
+function editPasswordFunction() {
+  cardPassword.classList.remove('hidden')
+}
+
 
 
 const arrayOfUsers = JSON.parse(localStorage.getItem('users'));
 const getPassword = JSON.parse(localStorage.getItem('userIsConnected'));
 
-sendButtonPassword.addEventListener('click', ()=> {
+function sendButtonPasswordFunction() {
   if (getPassword.password === oldPasswordInput.value && newPasswordInput.value === confirmPasswordInput.value) {
     const arrayUsers = arrayOfUsers.map(item => {
       if (item.password === getPassword.password) {
@@ -128,9 +129,10 @@ sendButtonPassword.addEventListener('click', ()=> {
    else {
     notification(cardNotification, "Modification du mot de passe", "Echec de la modification du mot de passe")
   }  
-})
+}
 
-closeIcon.addEventListener('click', ()=> {
+function closeIconFunction() {
   cardPassword.classList.add('hidden');
   notification(cardNotification, "Modification du mot de passe", "La modification a été anullée")
-})
+}
+
